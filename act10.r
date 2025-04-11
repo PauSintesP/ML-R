@@ -1,2 +1,6 @@
-## Montse no hi ha forma de fer-la :,C no la se fer. Gràcies
-cat("     X\n    XXX\n   XXXXX\n  XXXXXXX\n XXXXXXXXX\nLo important és el resultat, no la forma\n")
+for (i in 1:5) {
+    espais <- strrep(" ", 10 - i)
+    x <- strrep("X", 2 * i - 1)
+    cat(espais, x, "\n")
+}
+
