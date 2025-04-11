@@ -4,4 +4,5 @@ mitjana <- mean(nombres)
 
 suma <- sum((nombres - mitjana)^2)
 desviacio <- sqrt(suma / (length(nombres) - 1))
+
 desviacio
