@@ -1,8 +1,9 @@
-nombres <- c(1, 4.5, 7, 3, 15)
+factura_actual <- as.numeric(readline(prompt = "Introdueix la cantidad de la factura: "))
+anys <- as.numeric(readline(prompt = "Introdueix el nombre d'anys: "))
 
-mitjana <- mean(nombres)
+for (i in 1:anys) {
+    factura_actual <- factura_actual * 1.03
+}
 
-suma <- sum((nombres - mitjana)^2)
-desviacio <- sqrt(suma / (length(nombres) - 1))
 
-desviacio
+cat("La factura actualitzada és: ", factura_actual, "\n")

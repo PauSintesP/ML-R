@@ -1,6 +1,9 @@
 for (i in 1:5) {
-    espais <- strrep(" ", 10 - i)
-    x <- strrep("X", 2 * i - 1)
-    cat(espais, x, "\n")
+    for (j in 1:(10 - i)) {
+        cat(" ")
+    }
+    for (k in 1:(2 * i - 1)) {
+        cat("X")
+    }
+    cat("\n")
 }
-

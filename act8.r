@@ -1,9 +1,8 @@
-factura_actual <- 100.0
-anys <- 3
+nombres <- c(1, 4.5, 7, 3, 15)
 
-for (i in 1:anys) {
-    factura_actual <- factura_actual * 1.03
-}
+mitjana <- mean(nombres)
 
+suma <- sum((nombres - mitjana)^2)
+desviacio <- sqrt(suma / (length(nombres) - 1))
 
-factura_actual
+desviacio

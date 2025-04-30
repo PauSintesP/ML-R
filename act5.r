@@ -1,6 +1,6 @@
-x <- 10
-y <-3
 
+x <- as.numeric(readline(prompt = "x: "))
+y <- as.numeric(readline(prompt = "y: "))
 resultat = (sqrt(x))/(y^2 -1)
 
-resultat
+cat("resultat: ", resultat, "\n")

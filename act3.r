@@ -1,5 +1,5 @@
-nota_practica <- 5 * 0.3
-nota__teorica <- 7 * 0.6
-nota_participacio <- 10 * 0.1
-nota_final <- nota_practica + nota__teorica + nota_participacio
-nota_final
+num1 <- as.numeric(readline(prompt = "Nota pràctica: "))
+num2 <- as.numeric(readline(prompt = "Nota teòrica: "))
+num3 <- as.numeric(readline(prompt = "Nota participacio: "))
+nota_final <- (num1*0.3) + (num2*0.6) + (num3*0.10)
+cat("Nota final:", nota_final, "\n")
